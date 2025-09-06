@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanagalakshmi K - Portfolio</title>
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+
+    body { line-height:1.6; scroll-behavior: smooth; }
+
+    /* Navbar */
+    .navbar {
+      background:#fff;
+      padding:1rem 0;
+      border-bottom:1px solid #eee;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    .navbar .container {
+      width:90%; margin:auto;
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .navbar ul { display:flex; gap:20px; list-style:none; }
+    .navbar a {
+      text-decoration:none; color:#333; font-weight:bold; transition:0.3s;
+    }
+    .navbar a:hover { color:#e91e63; }
+
+    /* Hero */
+    .hero {
+      background:linear-gradient(to right, #fce4ec, #f8bbd0);
+      text-align:center; padding:5rem 0;
+      animation:fadeIn 1s ease-in-out;
+    }
+    .hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+    .hero p { font-size:1.2rem; margin-bottom:2rem; }
+    .btn {
+      padding:0.8rem 1.5rem; background:#e91e63; color:#fff;
+      border-radius:25px; text-decoration:none; transition:0.3s;
+    }
+    .btn:hover { background:#c2185b; }
+
+    /* Sections */
+    section { padding:4rem 0; }
+    .container { width:90%; margin:auto; }
+    h2 { text-align:center; margin-bottom:1.5rem; font-size:1.8rem; }
+
+    /* Cards */
+    .card {
+      background:#fff; padding:1.5rem; border-radius:10px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:1rem;
+      transition:transform 0.3s, opacity 0.6s; opacity:0; transform:translateY(30px);
+    }
+    .card.visible { opacity:1; transform:translateY(0); }
+
+    /* Contact */
+    .contact form {
+      display:flex; flex-direction:column; gap:15px;
+      max-width:500px; margin:auto;
+    }
+    .contact input, .contact textarea {
+      padding:10px; border:1px solid #ddd; border-radius:5px;
+    }
+    .contact button {
+      background:#e91e63; color:#fff; padding:10px;
+      border:none; border-radius:5px; cursor:pointer;
+    }
+    .contact button:hover { background:#c2185b; }
+
+    /* Footer */
+    .footer {
+      background:#333; color:#fff; text-align:center; padding:1rem;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(20px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1>Kanagalakshmi K</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hi, I’m Kanagalakshmi ?????</h1>
+      <p>Biomedical Engineering Student | Aspiring Biomedical Engineer</p>
+      <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Pursuing a Bachelor's degree in Biomedical Engineering with a focus on medical equipment. Completed internships as a biomedical technician, gaining experience in handling, maintaining, and troubleshooting medical devices. Seeking a Biomedical Engineer role to apply and enhance these skills in a professional setting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="card"><b>Technical:</b> C, C++, Equipment handling, Troubleshooting, Maintenance</div>
+      <div class="card"><b>Soft Skills:</b> Leadership, Problem-solving, Adaptability</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="card">B.E Biomedical Engineering - P.S.R Engineering College, Sivakasi (CGPA: 8.8)</div>
+      <div class="card">HSC - Kshatriya Girl's Higher Secondary School, Virudhunagar (82.8%)</div>
+      <div class="card">SSLC - Kshatriya Girl's Higher Secondary School, Virudhunagar (75.8%)</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Project & Internships</h2>
+      <div class="card">
+        <b>Smart Medicine Stock Management System</b>
+        <p>Developed using Arduino to identify medicines, check quantity, and monitor expiry dates with sensors and alerts.</p>
+      </div>
+      <div class="card"><b>Internship:</b> Penguin Hospital, Sengottai (10 days)</div>
+      <div class="card"><b>Internship:</b> R.S. Ortho Hospital, Rajapalayam (10 days)</div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="card">NPTEL – Medical Biomaterials</div>
+      <div class="card">Advanced Critical Care Equipment Training</div>
+      <div class="card">Workshop – Rudimentary in Biomedical Equipment</div>
+      <div class="card">Workshop – Cyrix Healthcare</div>
+      <div class="card">Hackathon – TANCAM’s for Women in Science & Engineering</div>
+      <div class="card">Learnathon Course – ICT Academy</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p style="text-align:center; margin-top:1rem;">?? kkanagalakshmi218@gmail.com | ?? 9894465521</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kanagalakshmi K | Biomedical Engineering Portfolio</p>
+  </footer>
+
+  <script>
+    // Contact form (demo only)
+    function sendMessage(event) {
+      event.preventDefault();
+      alert("Thank you for your message! (Demo only)");
+    }
+
+    // Fade-in cards on scroll
+    const cards = document.querySelectorAll('.card');
+    const revealOnScroll = () => {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          card.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
+
+
